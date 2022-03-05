@@ -1,21 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import defaultDataset from './dataset';
 import './assets/styles/style.css';
+
 import { AnswersList } from './components/index';
 
-type DataSet = {
-  [key:string]: Data
-}
-
-type Data = {
-  answers:Answers[],
-  question:string
-}
-
-type Answers = {
-  content: string,
-  nextId: string
-}
+import type { DataSet } from './types/dataset';
+import type { Answers } from './types/answers';
 
 function App() {
   const [answers, setAnswers] = useState<Answers[]>([]); // 回答コンポーネントに表示するデータ
