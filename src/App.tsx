@@ -23,7 +23,7 @@ function App() {
     const initAnswer = initDataset.answers;
 
     setAnswers(initAnswer);
-  });
+  }, [dataset, currentId]);
 
   return (
     <section className="c-section">
