@@ -10,7 +10,7 @@ type Props = {
     answers: Answers[]
 }
 
-const AnswersList: React.VFC<Props> = function Link({ answers }: Props) {
+const AnswersList: React.VFC<Props> = function AnswersList({ answers }: Props) {
   return (
     <div className="c-grid__answer">
       {

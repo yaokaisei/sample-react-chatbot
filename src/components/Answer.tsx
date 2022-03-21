@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Answer: React.VFC<Props> = function Link({ content }: Props) {
+const Answer: React.VFC<Props> = function Answer({ content }: Props) {
   const classes = useStyles();
 
   return (
